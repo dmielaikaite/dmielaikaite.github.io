@@ -9,6 +9,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -16,10 +18,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://dmielaikaite.github.io/resume/tree/master/resume",
+  "predeploy": "yarn run build",
+  "deploy": "gh-pages -d build",
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
